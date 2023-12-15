@@ -29,15 +29,15 @@ with open("quotes.txt") as quotes:
         with open("count.txt", mode="r+") as count:
             quote_count = int(count.read())
             # print("Day:", quote_count)
-            
+
         with open("count.txt", mode="w") as count:
             if quote_count < len(all_quotes) - 1:
                 count.write(str(quote_count + 1))
                 quote = f"Day: {quote_count}\n\n{all_quotes[quote_count]}"
             else:
                 count.write(str(0))
-                quote = (f"Day: {quote_count}\n\n{all_quotes[quote_count]}\n\nWell done! It's Day 101. Restarting from "
-                         f"tomorrow :)")
+                quote = (f"\n{all_quotes[quote_count]}\n\nWell done! It's Day {quote_count}. Restarting from "
+                         f"tomorrow ;)")
         print(quote)
         # with smtplib.SMTP("smtp.gmail.com") as connection:
         #     connection.starttls()
