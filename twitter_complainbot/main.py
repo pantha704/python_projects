@@ -56,7 +56,7 @@ class InternetSpeedTwitterBot:
         self.driver.implicitly_wait(15)
         email = self.driver.find_element(By.XPATH,
                                          '//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[5]/label/div/div[2]/div/input')
-        email.send_keys(TWITTER_EMAIL)
+        email.send_keys("pantha704")
         # print("try block")
 
         self.driver.implicitly_wait(15)
@@ -82,6 +82,7 @@ class InternetSpeedTwitterBot:
         text.send_keys(
             f"@airtelindia @fiber_xstream\nHey mfs! I would like to kindly request you for improving your fkin internet speed of {speed[0]}mbps Download and {speed[1]}mbps Upload, which absolutely doesnt meet the fkin plan of mine, which you shit about at every end of the month for billings.\n")
 
+        self.driver.implicitly_wait(15)
         tweet = self.driver.find_element(By.XPATH, '//*[@id="react-root"]/div/div/div['
                                                    '2]/main/div/div/div/div/div/div[3]/div/div[2]/div['
                                                    '1]/div/div/div/div[2]/div[2]/div[2]/div/div/div/div['
@@ -96,7 +97,7 @@ PROMISSED_DOWN = 80
 TWITTER_EMAIL = "pantha704"
 TWITTER_PASSWORD = "prathamj!"
 
-chrome_driver_path = r"C:\Users\prath\OneDrive\Desktop\udemy\python dev\chromedriver_win32\chrome.exe"
+# chrome_driver_path = r"C:\Users\prath\OneDrive\Desktop\udemy\python dev\chromedriver_win32\chrome.exe"
 
 driver = webdriver.Chrome()
 # driver.get("https://github.com/pantha704")
