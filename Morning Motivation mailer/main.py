@@ -22,7 +22,7 @@ word_list = ["Fresh", "Super", "Amazing", "Fantastic", "Enthusiastic", "Optimist
 
 
 def tweet_at_provider(msg):
-    # chrome_driver_path = r"C:\Users\prath\OneDrive\Desktop\udemy\python dev\chromedriver_win32\chrome.exe"
+    chrome_driver_path = r"C:\Users\prath\OneDrive\Desktop\udemy\python dev\chromedriver_win32\chrome.exe"
     driver = webdriver.Chrome()
 
     driver.implicitly_wait(15)
@@ -117,5 +117,5 @@ with open("quotes.txt") as quotes:
 
         msg = f"#Day{tweet_count} of coding\n{all_quotes[tweet_count]}"
         tweet_at_provider(msg=msg)
-        print(msg)
+        print(f"{msg}")
 

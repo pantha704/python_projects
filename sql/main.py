@@ -15,7 +15,7 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///new-books-collection.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///neooks-w-bcollection.db"
 db.init_app(app)
 
 

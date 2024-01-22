@@ -33,13 +33,13 @@ Bootstrap5(app)
 class Movie(db.Model):
     __tablename__ = "movies"
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(250), unique=True, nullabe=False)
-    year = db.Column(db.Integer, nullable=False)
-    description = db.Column(db.String, nullable=False)
-    rating = db.Column(db.Float, nullable=False)
-    ranking = db.Column(db.Integer, nullable=False)
-    review = db.Column(db.String, nullable=False)
-    img_url = db.Column(db.String, unique=True, nullable=False)
+    title = db.Column(db.String(250))
+    year = db.Column(db.Integer)
+    description = db.Column(db.String)
+    rating = db.Column(db.Float)
+    ranking = db.Column(db.Integer)
+    review = db.Column(db.String)
+    img_url = db.Column(db.String)
 
 
 with app.app_context():
