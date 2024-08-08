@@ -4,6 +4,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
+USER=""
+PASSWORD=""
+PROMISSED_UP = 80
+PROMISSED_DOWN = 80
 
 class InternetSpeedTwitterBot:
     def __init__(self):
@@ -56,7 +60,7 @@ class InternetSpeedTwitterBot:
         self.driver.implicitly_wait(15)
         email = self.driver.find_element(By.XPATH,
                                          '//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[5]/label/div/div[2]/div/input')
-        email.send_keys("pantha704")
+        email.send_keys(USER)
         # print("try block")
 
         self.driver.implicitly_wait(15)
@@ -68,7 +72,7 @@ class InternetSpeedTwitterBot:
         password = self.driver.find_element(By.XPATH,
                                             '//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[3]/div/label/div/div[2]/div[1]/input')
         password.click()
-        password.send_keys("prathamj!")
+        password.send_keys(PASSWORD)
         password.send_keys(Keys.ENTER)
 
 
@@ -92,10 +96,6 @@ class InternetSpeedTwitterBot:
         time.sleep(15)
 
 
-PROMISSED_UP = 80
-PROMISSED_DOWN = 80
-TWITTER_EMAIL = "pantha704"
-TWITTER_PASSWORD = "prathamj!"
 
 # chrome_driver_path = r"C:\Users\prath\OneDrive\Desktop\udemy\python dev\chromedriver_win32\chrome.exe"
 
