@@ -120,6 +120,6 @@ with open("quotes.txt") as quotes:
 #             # print("Day:", quote_count)
 #
 #         msg = f"#Day{tweet_count} of coding\n{all_quotes[tweet_count]}"
-        # tweet_at_provider(msg=msg)
-        # print(f"{msg}\n\nTweeted!")
+#        tweet_at_provider(msg=msg)
+#        print(f"{msg}\n\nTweeted!")
 
