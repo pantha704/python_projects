@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6743ac1c-1cb5-4fd4-b846-8d9105a5b0aa" name="Changes" comment="" />
+    <list default="true" id="6743ac1c-1cb5-4fd4-b846-8d9105a5b0aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Insta_daily_bot/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-66-starting-files-cafe-api/cardiocare.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-66-starting-files-cafe-api/image0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-66-starting-files-cafe-api/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-66-starting-files-cafe-api/image2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-66-starting-files-cafe-api/image3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day-66-starting-files-cafe-api/image4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Morning Motivation mailer/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Morning Motivation mailer/count.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Morning Motivation mailer/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Morning Motivation mailer/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Morning Motivation mailer/tweet_day.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Morning Motivation mailer/tweet_day.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-48/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day-48/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-48/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day-48/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../turtle-crossing-start" beforeDir="false" afterPath="$PROJECT_DIR$/../turtle-crossing-start" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitter_complainbot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../twitter_complainbot/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,26 +25,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2RdWiI2FcQOsOtqBGDw5rEZNtEQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/prath/OneDrive/Desktop/udemy/python dev/Completed Projects/Habit Tracker"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/prath/OneDrive/Desktop/udemy/python dev/Completed Projects/Habit Tracker&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Habit+Tracker" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -49,6 +65,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

@@ -13,16 +13,17 @@ from selenium.webdriver.common.keys import Keys
 
 # import datetime as dt
 
-my_email = "prathamjaiswal204@gmail.com"
-password = "rhhxzirrnqoisxbi"
-reciever = "prathamjaiswal204@gmail.com"
+my_email = ""
+password = ""
+reciever = ""
+twitter_usrname = ""
+twitter_pass = ""
 
 word_list = ["Fresh", "Super", "Amazing", "Fantastic", "Enthusiastic", "Optimistic", "Positive", "Bright", "Awakening",
              "Rejuvenating", "Energizing", "Enlivening", "Invigorating"]
 
-
+# Function to tweet the quote on your twitter ( html elements might have changed so i have commented out the tweeting part in the last lines of code )
 def tweet_at_provider(msg):
-    chrome_driver_path = r"C:\Users\prath\OneDrive\Desktop\udemy\python dev\chromedriver_win32\chrome.exe"
     driver = webdriver.Chrome()
 
     driver.implicitly_wait(15)
@@ -31,7 +32,7 @@ def tweet_at_provider(msg):
     driver.implicitly_wait(15)
     email = driver.find_element(By.XPATH,
                                 '//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[5]/label/div/div[2]/div/input')
-    email.send_keys("pantha704")
+    email.send_keys(twitter_usrname)
     # print("try block")
 
     driver.implicitly_wait(15)
@@ -43,7 +44,7 @@ def tweet_at_provider(msg):
     password = driver.find_element(By.XPATH,
                                    '//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[3]/div/label/div/div[2]/div[1]/input')
     password.click()
-    password.send_keys("prathamj!")
+    password.send_keys(twitter_pass)
     password.send_keys(Keys.ENTER)
 
     driver.implicitly_wait(15)
@@ -90,32 +91,35 @@ with open("quotes.txt") as quotes:
                 quote = (f"\n{all_quotes[quote_count]}\n\nWell done! It's Day {quote_count}. Restarting from "
                          f"tomorrow ;)")
         print(quote)
-        # with smtplib.SMTP("smtp.gmail.com") as connection:
-        #     connection.starttls()
-        #     connection.login(user=my_email, password=password)
-        #     connection.sendmail(from_addr=my_email, to_addrs=reciever,
-        #                         msg=f"Subject: Your {random.choice(word_list)} Morning Starter!\n\n{quote}")
-        #     connection.close()
+
+        # Sending mail
+        with smtplib.SMTP("smtp.gmail.com") as connection:
+            connection.starttls()
+            connection.login(user=my_email, password=password)
+            connection.sendmail(from_addr=my_email, to_addrs=reciever,
+                                msg=f"Subject: Your {random.choice(word_list)} Morning Starter!\n\n{quote}")
+            connection.close()
 
 
-with open("quotes.txt") as quotes:
-    all_quotes = quotes.readlines()
-    try:
-        with open("tweet_day.txt", mode="r+") as count:
-            tweet_count = int(count.read())
-            # print("Day:", quote_count)
-    except:
-        with open("tweet_day.txt", mode="w") as count:
-            count.write("0")
 
-    finally:
-        with open("tweet_day.txt", mode="r+") as count:
-            tweet_count = int(count.read())
-        with open("tweet_day.txt", mode="w") as count:
-            count.write(str(tweet_count + 1))
-            # print("Day:", quote_count)
-
-        msg = f"#Day{tweet_count} of coding\n{all_quotes[tweet_count]}"
-        tweet_at_provider(msg=msg)
-        print(f"{msg}")
+# with open("quotes.txt") as quotes:
+#     all_quotes = quotes.readlines()
+#     try:
+#         with open("tweet_day.txt", mode="r+") as count:
+#             tweet_count = int(count.read())
+#             # print("Day:", quote_count)
+#     except:
+#         with open("tweet_day.txt", mode="w") as count:
+#             count.write("0")
+#
+#     finally:
+#         with open("tweet_day.txt", mode="r+") as count:
+#             tweet_count = int(count.read())
+#         with open("tweet_day.txt", mode="w") as count:
+#             count.write(str(tweet_count + 1))
+#             # print("Day:", quote_count)
+#
+#         msg = f"#Day{tweet_count} of coding\n{all_quotes[tweet_count]}"
+        # tweet_at_provider(msg=msg)
+        # print(f"{msg}\n\nTweeted!")
 
