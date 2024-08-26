@@ -1,0 +1,1 @@
+A twitter bot which checks the the internet speed provided by your ISP and posts a complain msg ( if the speed is slower than specified in your actual plan ) on twitter from your account mentioning your ISP.
